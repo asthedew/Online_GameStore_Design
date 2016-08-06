@@ -1,0 +1,93 @@
+1.Register a customer using the account “cowbook” and log in.
+	1. register customer:
+		Open my index page "localhost/onlinestore/index.php" and click "Customer SignUp" to register a new customer, then page will skip to "localhost/onlinestore/customers/customers_signup.php".
+		Type in value for each filed, then click the button "Registration".
+	2. Customer LogIn:
+		Open my index page "localhost/onlinestore/index.php" and click "Customer LogIn" to go to the page "localhost/onlinestore/customers/customers_login.php".
+		And type the "cowbook" into filed "UserName" and type the "cowbook" into field "Password", then click the button LogIn to go to the page the page "localhost/onlinestore/customers/customers_index.php".
+
+2. 	View items and add two different items into the shopping basket
+	The product is listed on the main page "localhost/onlinestore/index.php" And then you can find the "Newest Item Added to the store" which are listed based on the added time.
+	You can View product Details and View the lager image for product that controled by dynamiclink product.php.
+	You can click the button "Buy" to add the product into shopping cart after you clik the "View product Details" in the "localhost/onlinestore/index.php".
+	Then back to main page "localhost/onlinestore/index.php" to select another product into shopping cart.
+
+	Orther function in shopping cart:
+	1. You also can click button "Remove" to remove item from shopping cart or click empty shopping cart to remove all of items in the shopping cart.
+	2. There will display the product picture, Unit Price, Quantity, Total Price and total price for shopping cart in the page of shopping cart.
+	3. If you want to buy two same product, the quantity  will automatic increase.
+
+3. Log in as a staff and View inventory
+	1.	Log in as a staff
+		Open my index page "localhost/onlinestore/index.php" and click "Staff Login" to enter username and password, then page will skip to "localhost/onlinestore/storestaff/staff_login.php".
+		type the "UserName" and "Password" which you have created in the table of staff into each filed, then click the button LogIn to go to page http://localhost/onlinestore/storestaff/staff_index.php.
+	2.	View inventory
+	    You will see some authority for staff in the staff page:http://localhost/onlinestore/storestaff/staff_index.php , then click Inventory to look up the inventory for onlinestore.
+	
+		Orther function in inventory list:
+		1. I did not split the inventory list and inventory_update into different page because i think it is repeat work for create a inventory list and inventory_update.
+		   In the inventory_list.php. Top will display each product in the inventory of onlinestore, and Bottom will display a form to upadate the inventory.
+
+4. 	Ship pending orders of “cowbook”
+	Back to staff page and select the option manage order.
+	We can find the order detial for customer "cowbook" in the page http://localhost/onlinestore/storestaff/order_list.php .
+	Then we can go the bottom of page to type the order number and select the option of "Shipped" to change the status for customer order.
+	Click the button "Update" to submit the require.
+	The page will refresh and show the order has been shipped
+	
+	Orther function in the update_order "order_list.php":
+	1. The quantity of product will not decrease in the inventory_list if the status of order is still "pending".
+	   But the quantity of product will decrease and display in the page of update order to ship(order_list.php) if
+	   the status of order change to "Shipped".
+	2. The all of data and information of product will disappear if the quantity of product is sold out when staff or manager change the status of order to "Shipped".
+	   You can look the function into the folder of "Update order to Shipped" which contains the image of output this function named 5.png.
+	   
+5. Log In as a manager and update the price of product
+	1.	Log in as a manager
+		Open my index page "localhost/onlinestore/index.php" and click "Admin Login" to enter username and password, then page will skip to "localhost/onlinestore/storeadmin/admin_login.php".
+		type the "UserName" and "Password" which you have created in the table of admin into each filed, then click the button LogIn to go to page http://localhost/onlinestore/storeadmin/admin_index.php.
+	2.	View inventory
+	    You will see some authority for manager in the manager page:http://localhost/onlinestore/storeadmin/admin_index.php , then click sale promotion to change the price of product for onlinestore.
+		You can type in the update price for each product in the bottom of page.
+		You can submit the button to change the price and the page will refresh and display the new price.
+	
+		Orther function in inventory list:
+		1. I did not split the inventory list and inventory_update into different page because i think it is repeat work for create a inventory list and inventory_update.
+		   In the inventory_list.php. Top will display each product in the inventory of onlinestore, and Bottom will display a form to upadate the inventory.
+		2. I set two function in the page of sale promotion("sale_promotion.php").    
+			first one is that display the total price of salse performance and second one i provide a function for manager that can update the new price to each product.
+			
+6. 	staff or manager update inventory 
+	1. Add the new item into inventory
+	   You can type the new product name, new product price, new product quantity, details, category, subcategory and upload the new product image into inventory of product.
+	   I will add the new product the details as below:
+	   
+	   product name: NBA 2K15 (Sony PlayStation 4, 2014)
+	   product price: 26.00
+	   quantity: 10
+	   Product Details: Condition:Like New: An item that looks as if it was just taken out of shrink wrap. No visible wear, and all facets of the item are flawless and intact. See the seller’s listing for full details and description of any imperfections.
+						Release Year:	2014
+						Publisher:	2K Games
+	   Category: Videos Games
+	   Subcategory: Ps4
+	   Product Image: 16.jpg which located in the folder of inventroy_image
+	   
+	   Submit the button after you typed data for new product.
+	   Then the page will refresh and display the new item at the top of page.
+	 
+	2. Restock the item into inventory
+	   The same steps as the add the new item into inventory. But if there is the same product in the inventory, the quantity of this product will increase.
+	   I will restock the item and the details as below:
+	   
+	   product name: NBA 2K15 (Sony PlayStation 4, 2014)
+	   product price: 26.00
+	   quantity: 10
+	   Product Details: Condition:Like New: An item that looks as if it was just taken out of shrink wrap. No visible wear, and all facets of the item are flawless and intact. See the seller’s listing for full details and description of any imperfections.
+						Release Year:	2014
+						Publisher:	2K Games
+	   Category: Videos Games
+	   Subcategory: Ps4
+	   Product Image: 16.jpg which located in the folder of inventroy_image
+	   
+	   Submit the button after you typed data for product.
+	   Then the page will refresh and display the new data for this product.

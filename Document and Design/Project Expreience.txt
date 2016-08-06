@@ -1,0 +1,12 @@
+	I am very enjoying the fun of working on this project. Be honest, I have took the class of CS316 before, and I still confuse about the making website before I do this project. 
+I just learn the making website of the fur. But for this project, I understood a lot of basic knowledges of how to make website and connect to database.
+At the beginning of working on this project, I even hard to find the server to make my website working. I tried to use the server of VM, but I think it is so
+inconvenient when I connect to database and change the table of database. So I searched the google to find the another way which is more convenience than using VM.
+Then I found the xampp which contains the phpMyadmin and mysql. I took a long to time to learn how to use this program. For instance, how to create the new table 
+in the phpMyadmin and how to insert the data into table. 
+	I began to make the php file after all of preparatory work done. But some function of web ideas was so difficult to achieve when I really want to add those into my webpage.
+For example, how to make the header and footer of web page unified. Or how to connect php files to database.
+The more complicated problem was coming when solved those trouble.  In particular when I solved the shopping cart that how to check out when click the buybutton.
+Then I tried to use the input hidden in the form to post array value to the page. Then i use foreach function to split them. But it may still have some bug in it.
+	In fact, I think the most important thing that I am really exciting is I did a website by myself. even though this website is very simple, many problems or low end website.
+But I have already known I need to practice over and over again. To practice can make the skill perfect. 
